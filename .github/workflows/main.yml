@@ -4,7 +4,7 @@ env:
   EB_APPLICATION_NAME       : "ArkadsWealth"
   EB_ENVIRONMENT_NAME       : "Arkadswealth-env"
   DEPLOY_PACKAGE_NAME       : "arkads-wealth-${{ github.sha }}.zip"
-  AWS_REGION_NAME           : "us-east-2"
+  AWS_REGION_NAME           : "us-east-1"
 
 on: 
   push:
