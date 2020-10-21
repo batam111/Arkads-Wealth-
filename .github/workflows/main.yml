@@ -2,7 +2,7 @@ name: CI-CD-Pipeline-to-AWS-ElasticBeanstalk
 env:
   EB_PACKAGE_S3_BUCKET_NAME : "cloudformation1-ebdeploymentbucket-170cif75xotu5"
   EB_APPLICATION_NAME       : "ArkadsWealth"
-  EB_ENVIRONMENT_NAME       : "ArkadsWealth-primary-env"
+  EB_ENVIRONMENT_NAME       : "Arkadswealth-env"
   DEPLOY_PACKAGE_NAME       : "arkads-wealth-${{ github.sha }}.zip"
   AWS_REGION_NAME           : "us-east-2"
 
