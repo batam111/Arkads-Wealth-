@@ -2,5 +2,7 @@
 # CI-CD Flask Pipeline with AWS 
 
 Full stack web application with Python backend that is able to generate 
-custom stock reports for chosen stock tickers by customer using real time data from Yahoo finance.
-Based on efficient frontier from the Modern Portfolio theory.
+custom stock reports.
+The user is able to choose any ticker that is available in Yahoo! Finance 
+And a custom report showing the most efficient portfolio is generated based on past data.
+Using the Modern Portfolio Theroy and Sharpe coefficient as the tool to generate the report.
