@@ -101,13 +101,10 @@ var stock_array = [stock1,stock2,stock3,stock4,stock5,stock6,stock7,stock8,stock
 const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
 var format = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-alert('test');
 form.addEventListener('submit', (e) => {
- alert(stock_array[0].value);
   let messages = [];
   for(i;i<11;i++){
     if(format.test(stock_array[i-1].value) == true){
-     alert('test');
       invalid_stock = true;
     }
   }
