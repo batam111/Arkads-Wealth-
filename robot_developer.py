@@ -13,8 +13,6 @@ def start(select,start_year,end_year,num_portfolios1):
  global num_portfolios 
  num_portfolios  =  num_portfolios1
  selected = select
-	#start_year = '2014-1-1'
-	#end_year = '2020-5-15'
  yf.pdr_override()
  frame = {}
  for stock in selected:
