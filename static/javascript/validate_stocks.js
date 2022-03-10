@@ -45,7 +45,8 @@ var stock_array = [stock1,stock2,stock3,stock4,stock5,stock6,stock7,stock8,stock
   
        event.preventDefault();
        let title = document.getElementById("errorMessages");
-       title.append(messages.join('\n '));
+       //title.append(messages.join('\n '));
+       title.append("Illegal value enetered");
       //errorElement.innerText = messages.join('\n ');
   }
  
