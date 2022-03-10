@@ -66,7 +66,6 @@ var startDate = document.getElementById("start");
 startDate.setAttribute("max",yesterDay1);
 var endDate = document.getElementById("end");
 endDate.setAttribute("max",todayStr);
+endDate.setAttribute("value",todayStr);
 let form = document.getElementById("form");
-alert(todayStr);
-alert(yesterDay1);
 form.addEventListener('submit', validate);
