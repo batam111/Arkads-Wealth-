@@ -3,15 +3,6 @@
    font-size: 18px;
  
 }
-#errorMessages{
-  position: absolute; 
-  top: 20%;
-  left: 100%;
-  width:80%;
-  padding-left:40px;
-}
-
-
 .row{
  margin-top:10px;
 }

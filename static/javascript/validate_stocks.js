@@ -1,6 +1,6 @@
 
 
-let title = document.getElementById("errorMessages");
+
 
 function validate(event) {
   var format = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~1234567890]/;
@@ -53,7 +53,9 @@ var stock_array = [stock1,stock2,stock3,stock4,stock5,stock6,stock7,stock8,stock
 
 }
 if(invalid_stock){
-title.append("Illegal value enetered");
+  var title = document.getElementById("errorMessages");
+  title.style.color="red";
+title.innerHTML = "Illegal value entered";
 }
 }
 var today = new Date();
