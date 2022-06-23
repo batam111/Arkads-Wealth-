@@ -4,6 +4,7 @@ import robot_developer as rd
 import robot_customer as rc
 import os
 import sys
+import gini as gi
 
 application = Flask(__name__)
 socketio = SocketIO(application)
@@ -67,8 +68,14 @@ def robot_developer():
   
   start_year = str(request.form["start_year"])
   end_year = str(request.form["end_year"])
+  algorithm_type = str(request.form['algo_type'])
+
   if(num_portfolios < 50000 and num_portfolios > 3):
-   output =  rd.start(selected,start_year,end_year,num_portfolios)
+   if(algorithm_type == 'Markovich'):
+    output =  rd.start(selected,start_year,end_year,num_portfolios)
+   else:
+    s = int(request.form['sensitivity'])
+    output = gi.start(selected,start_year,end_year,num_portfolios,s)
   else:
    return render_template("robot_developer.html")
   return render_template("complete.html")

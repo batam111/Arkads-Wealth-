@@ -72,9 +72,17 @@
       <div class="col-5">	<h2 class="display-4">More Variables </h1> </div>
       </div>
       
-      <div class="col-6 num_simulations">  	<p>Number of simulations: *  <input type = "text" name="num_portfolios"></p> </div>
-       <div class="col-2">  <input class="btn btn-primary" type="submit" value="Create Optimal Portfolios!"></div>
+      <div class="col-2 num_simulations">  	<p>Number of simulations: *  <input type = "text" name="num_portfolios"></p> </div>
+      <div class="col-2 num_simulations">  	<p>Sensitivity: *  <input type = "number" name="sensitivity"></p> </div>
+      <div class ="col-2">
+      <p>Select the algorithm</p>
+       <input type="radio" name="algo_type" value="Markovich">
+      <label for="age1">Markovich</label><br>
+      <input type="radio" name="algo_type" value="Gini">
+      <label for="age2">Gini</label><br>  
+      <div class="col-2">  <input class="btn btn-primary" type="submit" value="Create Optimal Portfolios!"></div>
     </div>
+      </div>
     
     <div class="row " id="ttop5">
   <div class="col-5"> <div id="error"></div></div>
